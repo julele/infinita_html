@@ -8872,7 +8872,8 @@ textarea.form-control {
   position: relative; }
   @media (max-width: 767.98px) {
     .ftco-section {
-      padding: 6em 0; } }
+      /* padding: 6em 0;  */
+    } }
 
 .ftco-no-pt {
   padding-top: 0; }
@@ -9134,9 +9135,9 @@ textarea.form-control {
   margin-bottom: 30px;
   padding: 0;
   background: #fff;
-  -webkit-box-shadow: 0px 24px 48px -13px rgba(0, 0, 0, 0.05);
+  /* -webkit-box-shadow: 0px 24px 48px -13px rgba(0, 0, 0, 0.05);
   -moz-box-shadow: 0px 24px 48px -13px rgba(0, 0, 0, 0.05);
-  box-shadow: 0px 24px 48px -13px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 24px 48px -13px rgba(0, 0, 0, 0.05); */
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
@@ -10038,4 +10039,27 @@ textarea.form-control {
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
   border-top: 15px solid #c4a763;
+}
+
+.portfolio-image {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+/* Para dispositivos móviles (menos de 768px) */
+@media (max-width: 767.98px) {
+  .portfolio-image.js-fullheight {
+    height: 50vh !important;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+}
+
+/* Para tablets y desktop (768px o más) */
+@media (min-width: 768px) {
+  .portfolio-image.js-fullheight {
+    height: 100vh !important;
+    border-radius: 15px;
+    overflow: hidden;
+  }
 }
