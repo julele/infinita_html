@@ -9946,6 +9946,12 @@ textarea.form-control {
   font-style: normal;
   font-size: 90px !important
 }
+.fugaz-one-regular {
+  font-family: "Fugaz One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 
 .texto-header {
   font-weight: 400;
@@ -9984,4 +9990,52 @@ textarea.form-control {
   font-weight: bold;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
   z-index: 2;
+}
+
+.bloque-dia {
+  width: 180px;
+  height: 250px;
+  background-color: #c4a763;
+  color: white;
+  font-family: Impact, 'Arial Black', sans-serif;
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 40px;
+  border-radius: 6px;
+  margin: 20px auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.numero-dia {
+  font-size: 100px;
+  line-height: 1;
+  font-weight: bold;
+}
+
+.texto-dia {
+  font-size: 28px;
+  letter-spacing: 1px;
+  margin-top: -10px;
+}
+
+.fecha-dia {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* Triángulo inferior */
+.bloque-dia::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 15px solid #c4a763;
 }
